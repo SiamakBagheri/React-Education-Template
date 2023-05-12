@@ -1,0 +1,41 @@
+/*--------------------------------------------------------------
+  # Features
+  --------------------------------------------------------------*/
+.features {
+    padding-top: 0px;
+}
+
+.features .icon-box {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    transition: 0.3s;
+    border: 1px solid #eef0ef;
+}
+
+.features .icon-box i {
+    font-size: 32px;
+    padding-left: 10px;
+    line-height: 1;
+}
+
+.features .icon-box h3 {
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-size: 16px;
+}
+
+.features .icon-box h3 a {
+    color: #37423b;
+    transition: 0.3s;
+}
+
+.features .icon-box:hover {
+    border-color: #5fcf80;
+}
+
+.features .icon-box:hover h3 a {
+    color: #5fcf80;
+}
