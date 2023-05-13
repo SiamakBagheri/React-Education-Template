@@ -1,12 +1,10 @@
 import { useEffect } from "react";
+import Header from "./Layout/Client/Header/Header";
+import Main from "./Layout/Client/Main/Main";
+import Footer from "./Layout/Client/Footer/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import PureCounter from "@srexi/purecounterjs";
 import "./App.css";
-import Header from "./Layout/Home/Header/Header";
-import Hero from "./Components/Hero/Hero";
-import Main from "./Layout/Home/Main/Main";
-import Footer from "./Layout/Home/Footer/Footer";
 
 function App() {
   useEffect(() => {
@@ -16,13 +14,11 @@ function App() {
       once: true,
       mirror: false,
     });
-    const pure = new PureCounter();
   });
 
   return (
     <>
       <Header />
-      <Hero />
       <Main />
       <Footer />
     </>

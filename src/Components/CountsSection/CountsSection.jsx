@@ -1,6 +1,11 @@
+import { useEffect } from "react";
+import PureCounter from "@srexi/purecounterjs";
 import "./style.css";
 
 const CountsSection = () => {
+  useEffect(() => {
+    const pure = new PureCounter();
+  });
   return (
     <section id="counts" className="counts section-bg">
       <div className="container">

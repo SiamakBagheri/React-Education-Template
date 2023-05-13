@@ -5,17 +5,17 @@ import PopularCoursesSection from "../../../Components/Popular-CoursesSection/Po
 import TrainersSection from "../../../Components/TrainersSection/TrainersSection";
 import WhyUsSection from "../../../Components/Why-usSection/Why-usSection";
 
-const Main = () => {
+const Home = () => {
   return (
-    <main id="main">
+    <>
       <AboutSectoin />
       <CountsSection />
       <WhyUsSection />
       <FeaturesSection />
       <PopularCoursesSection />
       <TrainersSection />
-    </main>
+    </>
   );
 };
 
-export default Main;
+export default Home;
