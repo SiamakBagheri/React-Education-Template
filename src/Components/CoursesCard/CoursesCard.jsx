@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const CoursesCard = ({
   img,
   category,
@@ -8,6 +10,14 @@ const CoursesCard = ({
   authorImg,
   customCols,
 }) => {
+  const [like, setLike] = useState(false);
+  const [likeCount, setLikeCount] = useState(14);
+
+  const handleClick = () => {
+    setLike(!like);
+    !like ? setLikeCount(likeCount + 1) : setLikeCount(likeCount - 1);
+  };
+
   return (
     <div className={`${customCols} d-flex align-items-stretch`}>
       <div className="course-item">
@@ -28,8 +38,14 @@ const CoursesCard = ({
               <span>{authorName}</span>
             </div>
             <div className="trainer-rank d-flex align-items-center">
-              <i className="bx bx-user"></i>&nbsp;50 &nbsp;&nbsp;
-              <i className="bx bx-heart"></i>&nbsp;65
+              <i className="bx bx-user"></i>
+              &nbsp;50 &nbsp;&nbsp;
+              <i
+                style={{ cursor: "pointer" }}
+                className={like ? "bi bi-heart-fill" : "bi bi-heart"}
+                onClick={handleClick}
+              ></i>
+              &nbsp;{likeCount}
             </div>
           </div>
         </div>
