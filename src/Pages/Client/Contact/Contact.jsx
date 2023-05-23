@@ -1,4 +1,5 @@
 import Breadcrumbs from "../../../Components/Breadcrumbs/Breadcrumbs";
+import "./style.css";
 
 const Contact = () => {
   return (

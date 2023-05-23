@@ -1,12 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.rtl.min.css";
 import "mdb-ui-kit/css/mdb.rtl.min.css";
-import "boxicons/css/boxicons.min.css";
-import "bootstrap-icons/font/bootstrap-icons.css";
-import "remixicon/fonts/remixicon.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import "remixicon/fonts/remixicon.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
+import "boxicons/css/boxicons.min.css";
 import App from "./App";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
